@@ -1,0 +1,200 @@
+<!DOCTYPE html> <!--timto musi kazdy html web zacit-->
+<html lang = "cs"> <!-- definice jazyka-->
+<head>
+	<title> Lucie Zendlová - Photo|Graphic Designer </title>
+	<meta charset="utf-8"> <!-- meta tagy se nezaviraji-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- timto mu rekneme aby pouzival bootstrapove kody-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">  <!-- toto je odkaz na ikonkovy font -->
+</head> <!-- meta inforamce, treba popis co se ukaze na google, v fb, atd., dobre pro socialni site, atd, marketingova vec-->
+
+<body>
+
+	<!-- menu delane bootstrapem -->
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-static-top"> <!-- toto vykresli menu, co se meni navbar default na navbar-inverse a zaroven dela i tu linku pod menu -->
+      <div class="container">
+        <div class="navbar-header"> <!-- hamburger ta mala triradkova ikonka, napr. menu, nejlepsi je tam davat ikonky, kosik v eshopu, toto je mobilni vec -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">LOGO</a> <!-- zde musi byt vse logo, obrazek co text, google to tak chape -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left"> <!-- toto vykresli menu, navbar-left zarovna vlevo -->
+            <li class="active"><a href="#myCarousel">O mě</a></li> <!-- oznaci aktivni polozku, dela to bootstrap-->
+            <li><a href="#join">Contact</a></li>
+            <li><a href="#news">Textík</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right"> <!-- toto je druhe menu, je to oddelene, navbar-right zarovna vpravo -->
+            <li><a href="#contact"><img src="img/lz.jpg" class="img-circle" width=30 height=30 />  Napište mi :)</a></li> <!-- vlozeni fotecky, lze dat i url obrazku, circle da to kruhu, dela to bootstrap -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel"> <!-- slider, id nemusi byt, ale mame pro identifikaci -->
+<ol class="carousel-indicators">
+  <li data-target="#myCarousel" data-slide-to="0" class=""></li> <!-- data target musi byt shodne s id, programovani vse cisluje od 0 -->
+  <li data-target="#myCarousel" data-slide-to="1" class="active"></li> <!-- active, ktery slide se zobrazi -->
+
+</ol>
+	<div class="carousel-inner">
+
+	<div class="item">
+  <img class="first-slide" src="img/slide4.jpg" alt="toto je obrazek 1"> <!-- alt dobre popsat kvuli google, SEO, popisem fotky se da delat reklama zadarmo, napr. kdo fotil fotku -->
+ <div class="container">
+  <div class="carousel-caption">
+   <h1>Toto je me grafické portfolio</h1>  <!-- H1 az H6 veliksot a dulezitost -->
+   <p>grafické práce</p>
+  </div>
+ </div>
+ </div>
+
+		<div class="item active">
+  <img class="second-slide" src="img/slide5.jpg" alt="toto je obrazek 2">
+      <div class="container">
+  <div class="carousel-caption">
+   <h1>Toto je me fotografické portfolio</h1>  <!-- H1 az H6 veliksot a dulezitost -->
+   <p>fotografické práce</p>
+		</div>
+		</div>
+	</div>
+	</div>
+
+	<section id="interests" class="container" >
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<H2 class="text-center">Co umím a dělám :)</H2> <!-- nadpis -->
+			</div>
+		</div>
+
+		<div class="row text-center"> <!-- toto je pro 3 sloupce, musi dat dohromady 12, protoze je to tam 3x o šířce 4 a zaroven centruje vsechny sloupce v tom-->
+			
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="interest-wrapper"> <!-- toto je nase pojmenovani, obalovac. proto abysme cely obsah sloupce formatovali naraz-->
+			<i class="fa fa-paint-brush fa-i" aria-hidden="true"></i> <!-- ikonka pera, fa-i je pridane je pro formatovani ikonek-->
+			<h3>Grafika</h3>
+			<p>Ráda dělám grafiku. Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+			</p>
+			</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="interest-wrapper">
+			<i class="fa fa-globe fa-i" aria-hidden="true"></i>
+			<H3>Web</H3>
+			<p>Ráda dělám web. Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.</p>
+			</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="interest-wrapper">
+			<i class="fa fa-camera fa-i" aria-hidden="true"></i>
+			<H3>Photo</H3>
+			<p>Ráda fotím. Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.</p>
+			</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="join" class="container-fluid"> <!-- pro 2 cudliky -->
+		<div class="row text-center">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 join1"> <!-- join1 vlastni trida pro nastaveni pozadi, obrazek, ci barva pozadi -->
+  			<span class="join-info">Podivejte se na moje stranky <br /> <!-- span slouzi na vkladani textu. p automaticky formatuje do bloku, span ne -->
+			<a href="http://www.zendl.cz" target="_blank">Lucie.zendl</a>
+			</span>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 join2">
+			<span class="join-info">Podivejte se na art dot stranky <br /> <!-- span slouzi na vkladani textu. p automaticky formatuje do bloku, span ne -->
+			<a href="http://www.artdotstudio.cz/" target="_blank">ART DOT Studio</a>
+			</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="news" class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+				<H2 class="text-center">Toto jsou nejnovější novinky z mojí tvorby</H2>
+				<div>
+				Ráda fotím. Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+				<br><br>
+				Ráda fotím. Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+				</div>
+			</div>
+		</div>
+	</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <h2>Kontaktní formulář</h2>
+      </div>
+    </div>
+    <div class="form-section row">
+      <div class="form-wrapper col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1"> <!-- ofset posunuti o pocet sloupcu a pak zacne kreslit-->
+        <form method="POST" action="" name="contact-form" role="form"> <!-- form je pro formular, POST je treba vzdy pouzit, button pro odeslani, komu se posle dela PHP na serveeru, toto odkazuje na PHP soubor, bez toho to nepojede dava se to do action="contact.php"-->
+          <div class="row"> <!-- row se da vnořit -->
+            <div class="col-md-4 col-lg-4">
+              <div class="form-group">
+                  <input type="text" placeholder="Celé meno" id="name" class="form-control" name="name" required=""> <!-- input, jaky typ pujde zadat, text, place holde, co bude predepsane-->
+              </div>
+              <div class="form-group">
+                  <input type="email" placeholder="Email" id="email" class="form-control" name="email" required=""> <!-- reguired musi byt vzdy vyplnit policko, email si server sam validuje-->
+              </div>
+              <div class="form-group">
+                  <input type="text" placeholder="Predmet" id="subject" class="form-control" name="subject" required="">
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-8"> <!-- policko na psani -->
+              <div class="form-group">
+                <textarea placeholder="Správa" rows="6" id="message" class="form-control" name="message" required=""></textarea> <!-- rows vyska policka -->
+              </div>
+          </div>
+          <div class="col-md-4 col-lg-4 text-center contact-button"> <!-- button pro odeslani, komu se posle dela PHP na serveeru, toto odkazuje na PHP soubor, bez toho to nepojede dava se to do action="contact.php" -->
+            <button class="btn-primary btn-contact btn-block" name="submit" type="submit">Odoslať</button>
+          </div>
+          <div class="col-md-8 col-lg-8 text-right">
+            Polia označené hviezdičkou sú povinné.
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+</section>
+
+<footer class="container"> <!-- toto je take sekce-->
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ul class="list-inline pull-left"> <!-- list-inline to dava do radku, jinak by to bylo pod sebou, pull-left zarovna nalevo-->
+            <li>&copy; Lucie Zendlová - 2016</li>
+            <li><a href="mailto:lucie.zendl@gmail.com">lucie.zendl@gmail.com</a></li>
+            <li><a href="https://www.facebook.com/LucieZendlovaPhotoGraphicDesigner/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/Mandragora258" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+            <li><a href="https://cz.linkedin.com/in/msvetlana" target="_blank"<i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="pull-right">
+          <a href="#interests">Nahoru   <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+          </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+
+
+	<!-- nacitani scriptu pro bootstrap, zalezi na poradi, protoze prvni nacita druhy jquery nacita javascript a vzdy na konci pred lomeno body-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
